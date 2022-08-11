@@ -17,6 +17,7 @@ Plug 'https://github.com/lifepillar/pgsql.vim' " PSQL Pluging needs :SQLSetType 
 Plug 'https://github.com/ap/vim-css-color' " CSS Color Preview
 Plug 'https://github.com/rafi/awesome-vim-colorschemes' " Retro Scheme
 Plug 'ryanoasis/vim-devicons'
+" cd ~/.local/share/nvim/site/autoload / cd coc.nvim / yarn install "
 Plug 'neoclide/coc.nvim'
 let g:coc_global_extensions = [
   \ 'coc-tsserver'
