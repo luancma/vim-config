@@ -7,6 +7,7 @@
 :set softtabstop=2
 :set mouse=a
 
+
 call plug#begin()
 
 Plug 'yogeshdhamija/find-in-dir-helper.vim'
@@ -37,6 +38,13 @@ Plug 'sonph/onehalf', { 'rtp': 'vim' }
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'romgrk/barbar.nvim'
 " END BAR "
+
+
+" Gruvbox theme 
+
+Plug 'morhetz/gruvbox'
+
+" End Gruvbox theme "
 
 set encoding=UTF-8
 
@@ -70,17 +78,16 @@ inoremap { {}<left>
 inoremap {<CR> {<CR>}<ESC>O
 inoremap {;<CR> {<CR>};<ESC>O
 
+
+
 " Start Theme "
 
-syntax on
-set t_Co=256
-set cursorline
-colorscheme onehalfdark
-let g:airline_theme='onehalfdark'
+set background=dark
+colorscheme gruvbox
 
 " End Theme "
 
-
-
 autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
 autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
+autocmd VimEnter * NERDTree
+
