@@ -7,7 +7,6 @@
 :set softtabstop=2
 :set mouse=a
 
-
 call plug#begin()
 
 Plug 'yogeshdhamija/find-in-dir-helper.vim'
@@ -23,7 +22,6 @@ Plug 'neoclide/coc.nvim'
 let g:coc_global_extensions = [
   \ 'coc-tsserver'
   \ ]
-
 Plug 'https://github.com/tc50cal/vim-terminal' " Vim Terminal
 Plug 'https://github.com/preservim/tagbar' " Tagbar for code navigation
 Plug 'https://github.com/terryma/vim-multiple-cursors' " CTRL + N for multiple cursors
@@ -39,12 +37,14 @@ Plug 'kyazdani42/nvim-web-devicons'
 Plug 'romgrk/barbar.nvim'
 " END BAR "
 
-
 " Gruvbox theme 
-
 Plug 'morhetz/gruvbox'
-
 " End Gruvbox theme "
+Plug 'mattn/emmet-vim'
+
+let g:user_emmet_mode='n'    "only enable normal mode functions.
+let g:user_emmet_mode='inv'  "enable all functions, which is equal to
+let g:user_emmet_mode='a'    "enable all function in all mode.
 
 set encoding=UTF-8
 
@@ -90,4 +90,3 @@ colorscheme gruvbox
 autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
 autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
 autocmd VimEnter * NERDTree
-
