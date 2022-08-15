@@ -6,6 +6,8 @@
 :set smarttab
 :set softtabstop=2
 :set mouse=a
+:set clipboard+=unnamedplus
+
 
 call plug#begin()
 
@@ -31,6 +33,7 @@ Plug 'peitalin/vim-jsx-typescript'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'jparise/vim-graphql'
 Plug 'sonph/onehalf', { 'rtp': 'vim' }
+Plug 'akinsho/toggleterm.nvim', {'tag' : 'v2.*'}
 
 " START BAR "
 Plug 'kyazdani42/nvim-web-devicons'
@@ -77,7 +80,6 @@ inoremap [ []<left>
 inoremap { {}<left>
 inoremap {<CR> {<CR>}<ESC>O
 inoremap {;<CR> {<CR>};<ESC>O
-
 
 
 " Start Theme "
